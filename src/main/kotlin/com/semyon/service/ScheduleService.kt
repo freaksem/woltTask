@@ -28,8 +28,8 @@ class ScheduleService {
                 }
             }
         }
-        println(stringBuilder.toString())
-        return stringBuilder.toString()
+        print(stringBuilder.trimEnd().toString())
+        return stringBuilder.trimEnd().toString()
     }
 
     private fun prepareData(scheduleRequest: Map<String, MutableList<WorkHours>>) {
