@@ -48,7 +48,9 @@ class ScheduleService {
     }
 
     private fun prepareTime(time: Long) =
-        LocalTime.ofSecondOfDay(time).format(DateTimeFormatter.ofPattern("h:mm a"))
+        if(time in 0..86399)
+            LocalTime.ofSecondOfDay(time).format(DateTimeFormatter.ofPattern("h:mm a"))
+        else "time is not in range from 0 to 86399"
 
     companion object {
         const val CLOSE = "close"
