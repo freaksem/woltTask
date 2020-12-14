@@ -1,6 +1,8 @@
 #Setup
 Before running application wait for downloading dependencies by gradle.
 
+Note that code requires java 8.
+
 For testing, you can run WoltApplication.kt and send post request to http://localhost:8080/api/schedule via Postman or something like this.
 
 Or just run unit test from test folder.
